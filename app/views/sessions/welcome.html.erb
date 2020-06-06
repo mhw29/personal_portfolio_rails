@@ -1,7 +1,388 @@
-<h1>Welcome</h1>
-<% if logged_in? %>
-    <h1>You are Logged In, <%= current_user.username %></h1>
-<%end%>
 
-<%= button_to "Login", '/login', method: :get%>
-<%= button_to "Sign Up", '/users/new', method: :get%>
+<div id="section-topbar">
+    <div id="topbar-inner">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown">
+                    <ul id="nav" class="nav">
+                        <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
+                        <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
+                        <li class="menu-item"><a class="smoothScroll" href="#interests" title="Interests"><i class="icon-briefcase"></i></a></li>
+                        <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+                    </ul><!--/ uL#nav -->
+                </div><!-- /.dropdown -->
+
+                <div class="clear"></div>
+            </div><!--/.row -->
+        </div><!--/.container -->
+
+        <div class="clear"></div>
+    </div><!--/ #topbar-inner -->
+</div><!--/ #section-topbar -->
+
+<div id="headerwrap">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-12">
+                <h1>Matt Williamson</h1>
+                <h3>Product Manager | mahwill29@gmail.com</h3>
+            </div><!--/.col-lg-12 -->
+        </div><!--/.row -->
+    </div><!--/.container -->
+</div><!--/.#headerwrap -->
+
+
+<section id="about" name="about"></section>
+<div id="intro">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>ABOUT</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>Innovative, versatile Product Management professional possessing track record as a catalyst of positive change within organizations.  Adept strategic ability to envision potential and conceptualize solutions, championing innovative processes while leveraging paired creativity and expertise to cultivate inventive product development strategies. Dedicated leader possessing engaging interpersonal skills, pairing communication expertise with natural coaching ability to foster internal talent while building strong professional relationships with vendors. Dedicated director of multiple teams and projects while displaying unwavering professionalism.</p>
+            </div>
+            <div class="col-lg-3">
+                <p><a href="https://s3.amazonaws.com/mattwilliamson.io/resume/Matt+Williamson+Resume.docx"><i class="icon-file"></i></a> <sm>DOWNLOAD RESUME</sm></p>
+            </div>
+
+        </div><!--/.row -->
+    </div><!--/.container -->
+</div><!--/ #intro -->
+
+
+<section id="resume" name="resume"></section>
+<!--EDUCATION DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>EDUCATION</h5>
+            </div>
+            <div class="col-lg-6">
+                <p><t>Bachelor's of Science - Information Technology</t><br/>
+                    Purdue University <br/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>GRADUATED IN MAY 2014</sm><br/>
+                </p>
+            </div>
+
+    </div><!--/.row -->
+    <hr>
+</div><!--/.container -->
+
+
+<!--WORK DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h5>WORK</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <p><t>Director, Product Management</t><br/>
+                VMox, LLC. <br/>
+            </p>
+            <p>Oversee team of direct reports, fostering a productive and positive environment while facilitating professional development opportunities. Develop and maintain four product roadmaps while orchestrating weekly stakeholder meetings to provide updates. Enabled organization to meet and exceed its goals by shepherding multiple high-level, strategic projects to success.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>November 2017 - Present</sm></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><t>Director, Operations</t><br/>
+                VMox, LLC. <br/>
+            </p>
+            <p>Designed, implemented, and directed daily operational processes and procedures to support a 3,500% increase in revenue over four years while driving 95% customer retention. Standardized polices & procedures for the operations team leading to reduction in average training time of two months to three weeks in addition to implementing employee goal performance metric tracking to assess employee growth.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>Nov 2014 - Nov 2017</sm></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><t>Operations Manager</t><br/>
+                VMox, LLC. <br/>
+            </p>
+            <p>Directed team of 3rd party developers for enhancements in the ColdFusion platform. Produced sophisticated propriety software, reducing account management time by 10+ hours per week, per analyst. Enabled operations team to maintain quality customer service while doubling our client base YoY for three years in a row.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>Nov 2013 - Nov 2014</sm></p>
+        </div>
+    </div>
+    <hr>
+</div><!--/.container -->
+
+
+<!--AWARDS DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h5>CERTIFICATIONS</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <p><t>Certified Solutions Architect - Associate</t><br/>
+                Amazon Web Services <br/>
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>November 2017</sm></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><t>Certfied SysOps - Associate</t><br/>
+                Amazon Web Services
+            </p>
+            <p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>December 2017</sm></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><t>Certfied DevOps Professional</t><br/>
+                Amazon Web Services
+            </p>
+            <p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>June 2020 (Pending)</sm></p>
+        </div>
+    </div>
+</div><!--/.container -->
+<br>
+<hr>
+<!--PATENT DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>PATENTS</h5>
+            </div>
+            <div class="col-lg-6">
+                <p><t>United States Patent #10033879</t><br/>
+                    Issued: 2016 <br/>
+                </p>
+            </div>
+    </div><!--/.row -->
+    <br>
+</div><!--/.container -->
+
+<!--SKILLS DESCRIPTION -->
+<div id="skillswrap">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>SKILLS</h5>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="javascript" height="130" width="130"></canvas>
+                    <p>Ruby</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 90,
+                                    color:"#1abc9c"
+                                },
+                                {
+                                    value : 10,
+                                    color : "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="bootstrap" height="130" width="130"></canvas>
+                    <p>Cloudformation</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 70,
+                                    color:"#1abc9c"
+                                },
+                                {
+                                    value : 30,
+                                    color : "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="wordpress" height="130" width="130"></canvas>
+                    <p>Rails</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 65,
+                                    color:"#1abc9c"
+                                },
+                                {
+                                    value : 35,
+                                    color : "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+
+                <div class="col-lg-3 col-lg-offset-3 centered">
+                    <canvas id="html" height="130" width="130"></canvas>
+                    <p>SQL Server</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 90,
+                                    color:"#1abc9c"
+                                },
+                                {
+                                    value : 10,
+                                    color : "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="photoshop" height="130" width="130"></canvas>
+                    <p>Terraform</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 70,
+                                    color:"#1abc9c"
+                                },
+                                {
+                                    value : 30,
+                                    color : "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 centered">
+                    <canvas id="illustrator" height="130" width="130"></canvas>
+                    <p>Ansible</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 50,
+                                    color:"#1abc9c"
+                                },
+                                {
+                                    value : 50,
+                                    color : "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+
+        </div><!--/.row -->
+        <br>
+    </div><!--/.container -->
+</div><!--/ #skillswrap -->
+
+
+
+<section id="interests" name="interests"></section>
+<!--PORTFOLIO DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>Interests and Hobbies</h5>
+            </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <%= image_tag ("bandh2.jpg"), class: "img-responsive"%>
+            </div>
+            <div class="col-lg-3">
+                <p>My Family</p>
+                <p>I am a father to two very energentic boys named Henry and Ben. They keep me very busy.  
+                    I wouldn't have it any other way.  I learn so much from them every single day.
+                    <br/><br/>
+            </div>
+        </div>
+
+            <div class="col-lg-6">
+                <%= image_tag ("quantum.jpg"), class: "img-responsive" %>
+            </div>
+            <div class="col-lg-3">
+                <p>Dev Ops and Product Management</p>
+                <p>The absolute best part of product management is making the complicated simple. 
+                        The day of a presentation with our technical team to review requirements and answer questions regarding a very complex integration are my absolute favorite days. 
+                        I love rapid prototyping solutions and outlining my findings with our development staff to productize the solution in a meaningful, scalble fashion. 
+                        Much of this fascination is driven through devops culture.  I read every book and article and I can related to the practice and strive to leverage it in my career daily. <br/><br/>
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3">
+                <p><img class="img-responsive" src="assets/img/House.jpg" alt=""></p>
+            </div>
+            <div class="col-lg-3">
+                <p>Construction</p>
+                <p>I bought an old farm house in 2013. 
+                    It is very close to finished at this point.  
+                    The journey to get here has been long and full of surprises.
+                    There is something very satisfying in taking something that is nothing and turning it into something beautiful. 
+                    I love construction because of the tangible aspects it presents. When we first moved into the house, it looked absolutely nothing like the picture to the left.  
+                    We are mostly done at this point.  We plan to add decks to the back and front this spring and wrap up the kitchen and bathroom this winter.
+                    It has been an extremly satisfying process to get to where we are today.<br/><br/>
+                </p>
+            </div>
+
+    </div><!--/.row -->
+    <br>
+    <br>
+</div><!--/.container -->
+
+
+
+<section id="contact" name="contact"></section>
+<!--FOOTER DESCRIPTION -->
+<div id="footwrap">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>CONTACT</h5>
+            </div>
+            <div class="col-lg-6">
+                <p><t>Email</t><br/>
+                    mahwill29@gmail.com <br/>
+                </p>
+                <p><t>Adress</t><br/>
+                    4101 N Fail Road <br/>
+                    La Porte, Indiana 46350 <br/>
+                </p>
+                <p><t>Phone</t><br/>
+                    +1 219-575-9999 <br/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>SOCIAL LINKS</sm></p>
+                <p>
+                    <a href="https://www.linkedin.com/in/mwilliamson0289/"><i class="icon-linkedin"></i></a>
+                </p>
+            </div>
+        </div><!--/.row -->
+    </div><!--/.container -->
+</div><!--/ #footer -->
