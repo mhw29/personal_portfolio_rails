@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
-       sessions[:user_id] = @user.id
+       session[:user_id] = @user.id
        redirect_to '/welcome'
     else
        redirect_to '/login'
@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
 
   def welcome
   end
-  
+
   def page_requires_login
   end
 end

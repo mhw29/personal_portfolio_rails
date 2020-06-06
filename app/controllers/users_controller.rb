@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
-  has_secure_password
+
   skip_before_action :authorized, only: [:new, :create]
 
   def new
+    @user = User.new
   end
 
   def create
@@ -10,7 +11,7 @@ class UsersController < ApplicationController
       :password))
 
       session[:user_id] = @user.id
-      
+
       redirect_to '/welcome'
   end
 end
