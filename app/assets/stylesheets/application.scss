@@ -1,5 +1,7 @@
 @import "bootstrap"; 
 @import "font-awesome";
+@import 'trix/dist/trix.css';
+@import 'actiontext';
 
  /* Author: Carlos Alvarez
  * URL: http://alvarez.is
@@ -40,7 +42,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #ffffff;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -156,8 +158,8 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	background: url(../images/header-bg.jpg) no-repeat center top;
-	margin-top: 60px;
+	background: image-url("header-bg.jpg") no-repeat center top;
+	/*margin-top: 60px; */
 	padding-top:140px;
 	text-align:center;
 	background-attachment: relative;
@@ -285,3 +287,4 @@ a:after {
 sm {
 	font-size: 12px;
 }
+
