@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: personal_portfolio_rails_development
+  database: personal-portfolio-rails-dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -37,11 +37,11 @@ development:
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  #port: 5432
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: personal_portfolio_rails_production
+  servername: personal-portfolio-rails.cluster-cgrrs35kfqvc.us-east-1.rds.amazonaws.com
+  database: personal-portfolio-rails
   username: personal_portfolio_rails
   password: <%= ENV['PERSONAL_PORTFOLIO_RAILS_DATABASE_PASSWORD'] %>

@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+rails webpacker:install
+rails active_storage:install
+rails action_text:install
