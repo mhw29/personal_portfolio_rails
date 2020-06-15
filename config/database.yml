@@ -79,8 +79,16 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  servername: personal-portfolio-rails.cluster-cgrrs35kfqvc.us-east-1.rds.amazonaws.com
-  database: personal-portfolio-rails
-  username: personal_portfolio_rails
-  password: <%= ENV['PERSONAL_PORTFOLIO_RAILS_DATABASE_PASSWORD'] %>
+  #<<: *default
+  #servername: personal-portfolio-rails.cluster-cgrrs35kfqvc.us-east-1.rds.amazonaws.com
+  #database: personal-portfolio-rails
+  #username: personal_portfolio_rails
+  #password: <%= ENV['PERSONAL_PORTFOLIO_RAILS_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['POSTGRESQL_HOST'] %>
+  username: <%= ENV['POSTGRESQL_USER_NAME'] %>
+  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
+  pool: 5
+  database: <%= ENV['POSTGRESQL_DB'] %>
+
