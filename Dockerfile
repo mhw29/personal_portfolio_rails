@@ -2,34 +2,27 @@ FROM ruby:2.6.0
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs libsqlite3-dev postgresql-client
-#RUN apt-get install -y yarn
-#RUN npm install yarn
-#RUN yarn install --check-files
-#RUN apt-get install npm
-#RUN npm install -g yarn
+
 RUN apt-get install apt-transport-https ca-certificates -y
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update -qq
 RUN apt-get install yarn
-#RUN yarn install --check-files
-#RUN mkdir /personal_portfolio_rails
 
 WORKDIR /personal_portfolio_rails
 COPY Gemfile /personal_portfolio_rails/Gemfile
 COPY Gemfile.lock /personal_portfolio_rails/Gemfile.lock
 
-#COPY Gemfile* /tmp/
-#WORKDIR /tmp
-
-
 ENV BUNDLE_PATH /box
 
-#RUN bundle install
 RUN bundle check || bundle install
 
 RUN yarn install --check-files
 ADD . /personal_portfolio_rails
+RUN bundle exec rake assets:precompile
 
+EXPOSE 3000
+
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 
 
 #docker build .
