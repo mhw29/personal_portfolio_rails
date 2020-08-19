@@ -58,6 +58,8 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     autoprefixer-rails (9.7.6)
       execjs
+    aws-healthcheck (1.0.1)
+      rails (>= 3.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.6)
@@ -227,6 +229,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-healthcheck
   bcrypt
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.5.0)

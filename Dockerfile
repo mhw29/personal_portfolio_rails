@@ -18,9 +18,12 @@ RUN bundle check || bundle install
 
 RUN yarn install --check-files
 ADD . /personal_portfolio_rails
-RUN bundle exec rake assets:precompile
 
 EXPOSE 3000
+
+#RUN ["chmod", "+x", "/personal_portfolio_rails/deployment_scripts/entrypoint.sh"]
+RUN chmod +x /personal_portfolio_rails/deployment_scripts/entrypoint.sh
+ENTRYPOINT ["sh", "/personal_portfolio_rails/deployment_scripts/entrypoint.sh"]
 
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 

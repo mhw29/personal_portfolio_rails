@@ -84,7 +84,7 @@ test:
 production:
   #<<: *default
   #servername: personal-portfolio-rails.cluster-cgrrs35kfqvc.us-east-1.rds.amazonaws.com
-  #database: personal-portfolio-rails
+  #database: personal_portfolio_prod
   #username: personal_portfolio_rails
   #password: <%= ENV['PERSONAL_PORTFOLIO_RAILS_DATABASE_PASSWORD'] %>
   adapter: postgresql

@@ -34,6 +34,8 @@ gem 'sprockets-rails'
 
 gem 'font-awesome-rails'
 
+gem 'aws-healthcheck'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
